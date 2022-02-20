@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulär övnging deluxe</title>
+    <link rel="stylesheet" type="text/css" href="style4lyfe.css" />
+</head>
+
+<body>
+    <div id="header">
+
+    </div>
+    <div id="content">
+        <div id="formId">
+            <div id="error"><span></span></div>
+            <form id="person" action="formular.html" method="post">
+                
+                <fieldset>
+                    <legend>Namnuppgifter</legend>
+                    <span>Förnamn:</span>
+                    <input type="text" name="fornamn" />
+                    <span>Efternamn:</span>
+                    <input type="text" name="efternamn" />
+                </fieldset>
+                <fieldset>
+                    <legend>Kön</legend>
+                    <div id="gender">
+                        <table>
+
+                            <tr>
+                                <td><span>Man</span></td>
+                                <td>
+                                    <input type="radio" name="gender" value="man" />
+                                </td>
+
+                                <td><span>Kvinna</span></td>
+                                <td>
+                                    <input type="radio" name="gender" value="kvinna" />
+                                </td>
+
+                                <td><span>Annat</span></td>
+                                <td>
+                                    <input type="radio" name="gender" value="annat" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Kontaktuppgifter</legend>
+                    <table>
+                        <tr>
+                            <td><span>Telefonnummer:</span></td>
+                            <td><input type="text" name="telefonnummer" /></td>
+                        </tr>
+                        <tr>
+                            <td><span>Mobilnummer:</span></td>
+                            <td><input type="text" name="mobilnummer" /></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                        <legend>Ålder</legend>
+                        <table id="alderTable">
+                            <tr>
+                                <td><span>Ålder:</span></td>
+                                <td><input type="range" id="alderRange" min="18" max="120" value="50" /></td>
+                                <td><div id="alder"><span>50</span></div></td>
+                            </tr>
+                        </table>
+                </fieldset>
+                <table id="submit">
+                    <tr>
+                        <td><input type="submit" value="Skicka" /></td>
+                        <td><input type="reset" value="Rensa" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="text/javascript" src="form.js"></script>
+</body>
+
+</html>
